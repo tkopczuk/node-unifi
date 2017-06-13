@@ -1094,11 +1094,6 @@ var Controller = function(hostname, port)
                           callback(error);
                       });
 
-        req.on('error', function(err)
-        {
-          callback(err.message);
-        });
-
         count++;
       },
       function(err) {
